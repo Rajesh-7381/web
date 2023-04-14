@@ -1,0 +1,38 @@
+<!-- event  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="pra">this is para</p>
+    <button id="btn">click</button>
+    <br> <br>
+    <div id="colored_div" style="background-color: rgb(0, 255, 51); height: 100px; width: 100px;"></div>
+    
+    
+
+    <script>
+       $("#colored_div").on({
+        click:function(){
+            // when clicked shows red color
+            $(this).css("background-color","red");
+        },
+        mouseenter:function(){
+            // when enter shows green color
+            $(this).css("background-color","green");
+        },
+        mouseleave:function(){
+            // when outside the colorbox shows yellow color
+            $(this).css("background-color","yellow");
+        }
+       });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+jquery is a js library.
+write less do more.
+jquery greatly simplifies js programing
+
+purpose-
+   a. simplify html dom tree traersal and manipulation, as well as event hadiling css animation, and ajax.
+   b.jquery will learn run exactly the same in all  major browserrs.(browserrs compatbility).
+
+   <!-- below line is google cdn -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>

@@ -1,0 +1,55 @@
+<!-- manipulating html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <button id="btn_1">button-1</button>
+    <br>
+    <br>
+    <button id="btn_2">button-2</button>
+    <br>
+    <br>
+    <div id="colored_div" style="background-color: rgb(0, 255, 38); height: 100px; width: 100px;">
+    <p>this is inside p tag <a href="link">link</a></p>
+    
+    </div>
+    <p>this is a outside p tag </p>
+  
+
+    <!-- <script> 
+
+        $("#btn_1").click(function(){
+            var txt=$("#colored_div").text();
+            alert(txt);
+        })
+
+    </script> -->
+
+
+    <!-- <script> 
+
+        $("#btn_1").click(function(){
+         var txt=$("#colored_div").html();
+                alert(txt);
+        })
+
+    </script> -->
+    <script> 
+
+        $("#btn_1").click(function(){
+           $("#colored_div").html("<h1>head</h1>");  //this inside html ignore inside div tag whatever written
+        });
+
+    </script>
+
+
+
+    
+</body>
+</html>

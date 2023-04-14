@@ -1,0 +1,44 @@
+<!-- event opertion performed -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="pra">this is para</p>
+    <button id="btn">click</button>
+    <br> <br>
+    <div id="colored_div" style="background-color: aqua; height: 100px; width: 100px;"></div>
+    
+    
+    <script>
+        // // when mouse entered in color box then hide paragraph 
+        // $("#colored_div").mouseenter(function(){
+        //  $("#pra").hide();
+        // });
+
+
+        // // when mouse remeoved in color box then hide paragraph 
+        // $("#colored_div").mouseleave(function(){
+        //  $("#pra").hide();
+        // });
+
+
+        // 2 operation performed at a time using hover() function
+        $("#colored_div").hover(function(){
+         $("#pra").hide(); //when entered in specific element then that hide
+        },
+        function(){
+            $("#pra").show();  //when entered in specific element then that show
+        },
+        )
+
+    </script>
+
+
+</body>
+</html>
